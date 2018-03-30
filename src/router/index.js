@@ -17,6 +17,7 @@ import dataset from '@/view/dataset'
 import recard from '@/view/recard'
 import shoucang from '@/view/shoucang'
 import addcard from '@/view/addcard'
+import youhuiquan from '@/view/youhuiquan'
 
 Vue.use(Router)
 
@@ -105,5 +106,10 @@ export default new Router({
             name: 'addcard',
             component: addcard
         },
+        {
+            path: '/youhuiquan',
+            name: 'youhuiquan',
+            component: youhuiquan
+        }
     ]
 })

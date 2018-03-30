@@ -3,7 +3,7 @@
     <header class="wy-header">
         <div class="wy-header-icon-back"  @click="$router.go(-1)"><span class="ion-chevron-left"></span></div>
         <div class="wy-header-title">个人中心</div>
-        <router-link to="dataset" class="wy-header-right" ><span class="ion-chevron-left"></span></router-link>
+        <router-link to="dataset" class="wy-header-right" ><span class=""><img src="../../static/images/shezhi.png" style="width: 18px;height:18px;"></span></router-link>
     </header>
 
 
@@ -132,7 +132,7 @@ export default {
         },
         {
             name: '优惠券',
-            path: 'classify',
+            path: 'youhuiquan',
         },
         {
             name: '地址管理',
@@ -146,11 +146,11 @@ export default {
       mepenltwo: [
         {
             name: '申请分销',
-            path: 'shoucang',
+            path: 'distri',
         },
         {
             name: '申请店面入驻',
-            path: 'classify',
+            path: 'distri',
         },
         {
             name: '关于我们',
