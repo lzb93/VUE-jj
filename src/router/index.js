@@ -7,6 +7,8 @@ import distri from '@/view/distri'
 import mine from '@/view/mine'
 import shopcart from '@/view/shopcart'
 import pro_info from '@/view/pro_info'
+import login from '@/view/login'
+import regist from '@/view/regist'
 
 // mine
 import address_list from '@/view/address_list'
@@ -25,7 +27,7 @@ export default new Router({
     mode: 'history',
     routes: [{
             path: '/',
-            redirect: '/index'
+            redirect: '/login'
         },
         {
             path: '/index',
@@ -110,6 +112,16 @@ export default new Router({
             path: '/youhuiquan',
             name: 'youhuiquan',
             component: youhuiquan
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: login
+        },
+        {
+            path: '/regist',
+            name: 'regist',
+            component: regist
         }
     ]
 })

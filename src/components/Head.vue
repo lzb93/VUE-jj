@@ -1,7 +1,7 @@
 <template>
   <div  class="Navvue">
       <header class="wy-header">
-          <div class="wy-header-left">厦门<span class="ion-ios-arrow-down"></span></div>
+          <div class="wy-header-left">{{postion}}<span class="ion-ios-arrow-down"></span></div>
           <div class="wy-header-title" style=" padding: 8px 0;">
             <div class="search-bg">
               <span class="weui-icon-search"></span>
@@ -30,6 +30,7 @@
 
 export default {
   name: 'Navvue',
+  props:['postion'],
 
   methods:{
    

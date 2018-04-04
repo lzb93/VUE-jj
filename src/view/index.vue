@@ -1,6 +1,6 @@
 <template>
   <div class="weui-content">
-        <Navvue></Navvue>
+        <Navvue :postion="postion"></Navvue>
 
          <!--图标分类-->
         <div class="weui-flex wy-iconlist-box">
@@ -48,6 +48,7 @@ export default {
   },
   data () {
         return {
+          postion:"厦门市",
           banner: {},
           menu: {},
           bodyshop: [],
@@ -63,6 +64,7 @@ export default {
       me.menu = data.menu;
       me.bodyshop = data.starGoods.starGoodsList;
       me.bannerList = data.banner.bannerTop;
+      
 
 
       // var apix="http://w.wanshangtang.com/home/index/new_indexpage";

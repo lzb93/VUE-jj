@@ -42,5 +42,8 @@ export default {
     padding: 5px 20px;
     border-radius: 8px;
   }
+  .wy-header-left{
+    font-size: 14px
+  }
 </style>
 

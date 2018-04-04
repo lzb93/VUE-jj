@@ -88,22 +88,23 @@ export default {
     
     getdatamos:function(){
       // 请求数据
-       // var apix="http://w.wanshangtang.com/home/index/new_indexpage";
-      // me.axios.get(apix).then((response) => {
+      var me=this
+       var apix="http://w.wanshangtang.com/home/index/new_indexpage";
+      me.axios.get(apix).then((response) => {
            
-      //     if(response.status==401){
+          if(response.status==401){
 
-      //     }
-      //     if(response.status==200){
-      //         console.log(response)
-      //     }else{
-      //       console.log(response.statusText)
-      //     }
+          }
+          if(response.status==200){
+              console.log(response)
+          }else{
+            console.log(response.statusText)
+          }
     
-      //   },(err) => {
-      //     console.log(22),
-      //     console.log(err)
-      //   })
+        },(err) => {
+          console.log(22),
+          console.log(err)
+        })
       
     }
     
